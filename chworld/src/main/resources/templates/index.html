@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head >
+<meta charset="UTF-8">
+<title>CHWORLD</title>
+
+<style type="text/css">
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+figure.snip1283 {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  margin:auto;
+  margin-top: 150px;
+  min-width: 230px;
+  max-width: 500px;
+  max-height: 400px;
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  background-color: white;
+  font-size: 16px;
+  -webkit-perspective: 50em;
+  perspective: 50em;
+}
+figure.snip1283 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+figure.snip1283 img {
+  opacity: 1;
+  width: 100%;
+  -webkit-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+}
+figure.snip1283 figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  z-index: 1;
+  opacity: 0;
+  padding: 50px 30px;
+}
+figure.snip1283 h3,
+figure.snip1283 p {
+  line-height: 1.5em;
+  color: black;
+}
+figure.snip1283 h3 {
+  margin: 0;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+figure.snip1283 p {
+  font-size: 0.8em;
+  font-weight: 500;
+  margin: 0 0 15px;
+}
+figure.snip1283 .read-more {
+  border: 2px solid black;
+  padding: 0.5em 1em;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+figure.snip1283 .read-more:hover {
+  background-color: #66BB6A;
+  color: black;
+}
+figure.snip1283:hover img,
+figure.snip1283.hover img {
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  opacity: 0;
+}
+figure.snip1283:hover figcaption,
+figure.snip1283.hover figcaption {
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.cen{
+	text-align: center;
+}
+.l{font-size: 80px;}
+.m{font-size: 40px;}
+</style>
+
+
+</head>
+<body>
+	<h1 class="cen l">PORTFOLIO</h1>
+	<h2 class="cen m">Lee Chan Ho</h2>
+	<figure class="snip1283">
+  		<img src="./image/STORY_A (4).png"/>
+	  	<figcaption>
+	    	<h3>저를 소개합니다.</h3>
+	    	<p></p>
+	    	<a href="#" class="read-more">소개</a>
+	  	</figcaption>
+	</figure>
+	<figure class="snip1283">
+  		<img src="./image/AWS_A (2).png"/>
+	  	<figcaption>
+	    	<h3>AWS를 이용 배포 및 서비스</h3>
+	    	<p>직접 사이트를 서비스 해보고자 AWS를 경험해 보았습니다.</p>
+	    	<a href="#" class="read-more">사용기 보기</a>
+	  	</figcaption>
+	</figure>
+	<figure class="snip1283">
+  		<img src="./image/NODE_A (2).png"/>
+	  	<figcaption>
+	    	<h3>Node JS와 Vue JS 게시판 구현</h3>
+	    	<p>점점 인기도가 높아지는 NodeJs와 <br/>프런트엔드 프레임워크를 공부해 보고자<br/>Node Js 와 Vue Js를 사용하여 게시판을 구현해 보았습니다.</p>
+	    	<a href="#" class="read-more">코드리뷰</a>
+	    	<a href="#" class="read-more">보러가기</a>
+	  	</figcaption>
+	</figure>
+	<figure class="snip1283">
+  		<img src="./image/SB_A.png"/>
+	  	<figcaption>
+	    	<h3>스프링 부트 게시판 구현</h3>
+	    	<p>SpringBoot/Gradle/Mybatis 구조로 <br/>게시판을 구현했습니다.<br/>DataBase는 MySQL 템플릿엔진은 Thymleaf를 사용하였습니다. </p>
+	    	<a href="#" class="read-more">코드리뷰</a>
+	    	<a href="http://www.chworld.net/springBoard" class="read-more">보러가기</a>
+	  	</figcaption>
+	</figure>
+	<figure class="snip1283">
+  		<img src="./image/SPS_A (3).png"/>
+	  	<figcaption>
+	    	<h3>여성의류 웹 쇼핑몰 구현</h3>
+	    	<p>Spring Legacy_MVC2/Maven/Mybatis 구조로 <br/>여성의류 쇼핑몰을 구현했습니다.<br/>DataBase는 MySQL 서버사이드언어는 JSP를 사용하였습니다.</p>
+	    	<a href="#" class="read-more">코드리뷰</a>
+	    	<a href="http://www.chworld.net/SevenPrincessShop" class="read-more">보러가기</a>
+	  	</figcaption>
+	</figure>
+	<figure class="snip1283">
+  		<img src="./image/KIOSK_A (5).png"/>
+	  	<figcaption>
+	    	<h3>키오스크 서비스 구현</h3>
+	    	<p>Java GUI를 이용하여<br/>키오스크 서비스를 구현했습니다.<br/>DataBase는 MySQL을 이용하였습니다.</p>
+	    	<a href="#" class="read-more">코드리뷰</a>
+	    	<a href="#" class="read-more">보러가기</a>
+	  	</figcaption>
+	</figure>	
+</body>
+<script type="text/javascript">
+	
+</script>
+</html>
